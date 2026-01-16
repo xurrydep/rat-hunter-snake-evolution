@@ -4,12 +4,12 @@
   "description": "A modern take on the classic Snake game featuring mice hunting and evolution on Base.",
   "icons": [
     {
-      "src": "https://rat-hunter.vercel.app/icon.png",
+      "src": "public/icon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://rat-hunter.vercel.app/icon.png",
+      "src": "public/splash.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -18,15 +18,14 @@
   "display": "standalone",
   "background_color": "#020617",
   "theme_color": "#0052FF",
-  "app_url": "https://rat-hunter.vercel.app",
   "frame": {
     "version": "1",
     "name": "Rat Hunter",
-    "icon": "https://rat-hunter.vercel.app/icon.png",
-    "home_url": "https://rat-hunter.vercel.app",
-    "image_url": "https://rat-hunter.vercel.app/og-image.png",
+    "icon": "https://rat-hunter.vercel.app/public/icon.png",
+    "home_url": "https://rat-hunter.vercel.app/",
+    "image_url": "https://rat-hunter.vercel.app/public/hero.png",
     "button_title": "Play Rat Hunter",
-    "splash_image_url": "https://rat-hunter.vercel.app/splash.png",
+    "splash_image_url": "https://rat-hunter.vercel.app/public/splash.png",
     "splash_color": "#020617"
   }
 }

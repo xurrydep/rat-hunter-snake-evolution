@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { OnChainTx } from '../types';
 
@@ -43,14 +42,16 @@ const MainMenu: React.FC<MainMenuProps> = ({ onStart, onLeaderboard, onSkins, on
         )}
       </div>
 
-      <div className="float-animation flex flex-col items-center mt-12">
-         <div className="relative">
-            <h1 className="text-6xl font-game text-white drop-shadow-[0_6px_0px_#0052FF] mb-2 base-text-glow">
-              RAT HUNTER
-            </h1>
-            <span className="absolute -right-6 -top-6 text-4xl rotate-12 bg-white rounded-full p-2 shadow-2xl border-4 border-[#0052FF] animate-bounce">🐭</span>
+      <div className="float-animation flex flex-col items-center mt-8">
+         <div className="relative w-full max-w-[280px]">
+            <img 
+              src="public/hero.png" 
+              alt="Rat Hunter Hero" 
+              className="w-full h-auto drop-shadow-[0_10px_20px_rgba(0,82,255,0.4)] rounded-2xl"
+            />
+            <span className="absolute -right-4 -top-4 text-4xl rotate-12 bg-white rounded-full p-2 shadow-2xl border-4 border-[#0052FF] animate-bounce">🐭</span>
          </div>
-        <div className="flex items-center gap-2 mt-2">
+        <div className="flex items-center gap-2 mt-4">
           <div className="bg-[#0052FF] text-white text-[9px] px-2 py-1 rounded-md font-black tracking-widest flex items-center gap-2 shadow-lg shadow-blue-500/20">
              <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
              BUILD ON BASE

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { getGameCommentary } from '../services/geminiService';
 
@@ -42,7 +41,10 @@ const GameOver: React.FC<GameOverProps> = ({ score, onRestart, onMenu, onSaveSco
 
   return (
     <div className="flex flex-col items-center gap-6 text-center animate-in fade-in zoom-in duration-500 w-full px-4">
-      <h2 className="text-5xl font-game text-red-500 drop-shadow-[0_4px_0px_#991b1b] base-text-glow">OUCH!</h2>
+      <div className="relative">
+        <img src="public/icon.png" alt="Snake Icon" className="w-16 h-16 rounded-2xl shadow-xl border-2 border-red-500/50 mb-2" />
+        <h2 className="text-5xl font-game text-red-500 drop-shadow-[0_4px_0px_#991b1b] base-text-glow">OUCH!</h2>
+      </div>
       
       <div className="bg-slate-900/90 p-8 rounded-[3rem] w-full max-w-sm flex flex-col items-center gap-6 border border-slate-800 shadow-[0_25px_60px_rgba(0,0,0,0.8)] backdrop-blur-xl relative overflow-hidden">
         {/* Minting Overlay */}
