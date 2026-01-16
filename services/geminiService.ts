@@ -1,10 +1,9 @@
-
 import { GoogleGenAI } from "@google/genai";
 
-// Initialize Gemini SDK using process.env.API_KEY directly as per guidelines
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 export async function getGameCommentary(score: number): Promise<string> {
+  // Initialize right before making an API call as per rules
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  
   try {
     const response = await ai.models.generateContent({
       model: 'gemini-3-flash-preview',
@@ -13,7 +12,7 @@ export async function getGameCommentary(score: number): Promise<string> {
         temperature: 0.8,
       }
     });
-    // Accessing .text property directly from GenerateContentResponse
+    // Accessing .text property directly
     return response.text || "Great game!";
   } catch (error) {
     console.error("AI service error:", error);

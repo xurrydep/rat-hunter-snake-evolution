@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { GameState, LeaderboardEntry, Skin, OnChainTx } from './types';
 import { SKINS } from './constants';
@@ -77,7 +76,7 @@ const App: React.FC = () => {
       name,
       address: address || undefined,
       score,
-      date: new Date().toLocaleDateString('tr-TR'),
+      date: new Date().toLocaleDateString('en-US'),
       txHash: hash
     };
     const updated = [...leaderboard, newEntry]
